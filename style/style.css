@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* shared */
+.container-header{
+    margin: 0px 124px 70px 156px;
+}
+.container-main{
+    margin: 0px 212px 0px 180px;
+}
+
+/* navbar section */
+.header{
+    background-color: rgba(45, 37, 160, 1);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-option{
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    gap: 24px;
+    color: white; 
+}
+.navbar-option:hover{
+    cursor: pointer;
+}
+.btn-primary{
+    width: 124px;
+    height: 44px;
+    margin-top: 43px;
+    padding: 10px 24px;
+    font-size: 16;
+    border: none;
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+}
+.btn-primary i{
+    margin-right: 6px;
+}
+/* banner section*/
+.banner{
+    display: flex;
+    justify-content: space-between;
+
+}
+.banner img{
+    width: 543px;
+    height: 440px;
+    margin-bottom: 84px;
+}
+.banner-container{
+    width: 40%;
+}
+.banner-container h1{
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 80px;
+    margin-top: 70px;
+    color: white;
+}
+.banner-container button{
+    width: 148px;
+    margin-top: 20px;
+}
+.banner-container i{
+    margin-left: 6px;
+}
+
+/* card-section*/
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    margin-bottom: 140px;
+}
+
+.card{
+    width: 325px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid white;
+    box-shadow: 5px 5px 13px 3px rgba(206, 203, 203, 0.562);
+    position: relative;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.card-body{
+    width: 100%; 
+    height: 100%;
+    top: -100%;
+    right: 0%;
+    position: absolute;
+    background:rgba(114, 113, 113, 0.05);
+    backdrop-filter: blur(6px) ;
+    border-radius: 18px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s;
+}
+
+.card:hover .card-body {
+    top: 0px;
+    
+}
+.card h3{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 46px;
+}
+.card p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(255, 254, 254);
+}
+/* copa section */
+.copa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 66px;
+    margin-bottom: 140px
+}
+.copa img{
+    width: 650px;
+    height: 450px;
+    /* margin-left: 20px; */
+}
+.copa h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: black;
+    margin: 16px 0;
+}
+.copa p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: gray;
+}
+.copa button{
+    width: 160px;
+}
+.copa button> i{
+    margin-left: 6px;
+}
+/* footer section*/
+.footer-img{
+    margin-left: 350px;
+}
+footer img{
+    height: 100px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    margin-left: 470px;
+}
+.icons img{
+    height: 30px;
+    margin-right: 20px;
+}
+footer p{
+    text-align: center;
+    margin: 24px 0px;
+}
